@@ -28,7 +28,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-Ty-65W">
-                                <rect key="frame" x="20" y="64" width="335" height="649.66666666666663"/>
+                                <rect key="frame" x="20" y="64" width="335" height="639.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-bY-D1j">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="35.333333333333336"/>
@@ -38,10 +38,10 @@
                                         <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZu-Az-lvd">
-                                        <rect key="frame" x="0.0" y="49.333333333333329" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="49.333333333333329" width="240" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-kA-WYB">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="tV2-DH-Edm"/>
                                                 </constraints>
@@ -49,8 +49,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pre-tax amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-us-oGp">
-                                                <rect key="frame" x="120" y="0.0" width="120" height="35"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pre-tax Amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-us-oGp">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="shl-zR-TDO"/>
                                                 </constraints>
@@ -58,24 +58,13 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-53-pNf">
-                                                <rect key="frame" x="240" y="0.0" width="75" height="35"/>
-                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                                <state key="normal" title="Clear"/>
-                                                <connections>
-                                                    <action selector="clearPreTaxAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCa-6z-K9Y"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="ISg-53-pNf" secondAttribute="trailing" id="klT-XE-XbL"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exo-oo-Vqe">
-                                        <rect key="frame" x="0.0" y="98.333333333333343" width="315" height="35"/>
+                                        <rect key="frame" x="0.0" y="93.333333333333343" width="240" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M74-QT-Qfp">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="a0Q-5H-N66"/>
                                                 </constraints>
@@ -83,8 +72,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-6T-WSc">
-                                                <rect key="frame" x="120" y="0.0" width="120" height="35"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-6T-WSc">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="N6t-D7-QHj"/>
                                                 </constraints>
@@ -92,24 +81,16 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-7t-GCc">
-                                                <rect key="frame" x="240" y="0.0" width="75" height="35"/>
-                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
-                                                <state key="normal" title="Clear"/>
-                                                <connections>
-                                                    <action selector="clearTaxAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4F7-Qr-dAc"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post-Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaN-UY-Okf">
-                                        <rect key="frame" x="0.0" y="147.33333333333334" width="89.333333333333329" height="24"/>
+                                        <rect key="frame" x="0.0" y="137.33333333333334" width="89.333333333333329" height="24"/>
                                         <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vau-Ud-cy3">
-                                        <rect key="frame" x="0.0" y="185.33333333333334" width="245" height="30"/>
+                                        <rect key="frame" x="0.0" y="175.33333333333334" width="245" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-YQ-vXj">
                                                 <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
@@ -135,19 +116,19 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-Cr-Jwx">
-                                        <rect key="frame" x="0.0" y="229.33333333333331" width="71" height="28.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="219.33333333333331" width="71" height="28.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5g-wx-2dE">
-                                        <rect key="frame" x="0.0" y="272" width="75.666666666666671" height="28.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="262" width="75.666666666666671" height="28.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-WT-WIy">
-                                        <rect key="frame" x="0.0" y="314.66666666666669" width="335" height="335.00000000000006"/>
+                                        <rect key="frame" x="0.0" y="304.66666666666669" width="335" height="335.00000000000006"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="pIh-WT-WIy" secondAttribute="height" multiplier="1:1" id="3CR-2l-FBl"/>
                                         </constraints>
@@ -155,8 +136,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="vLN-bY-D1j" secondAttribute="trailing" id="QvL-Sw-euL"/>
-                                    <constraint firstAttribute="trailing" secondItem="Exo-oo-Vqe" secondAttribute="trailing" constant="20" id="RpH-0s-eOe"/>
-                                    <constraint firstAttribute="trailing" secondItem="QZu-Az-lvd" secondAttribute="trailing" constant="20" id="s0f-ln-srF"/>
                                 </constraints>
                             </stackView>
                         </subviews>

@@ -84,13 +84,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Actions
-    @IBAction func clearPreTaxAmount(_ sender: UIButton) {
-        PreTaxAmountField.text = nil
-    }
-    
-    @IBAction func clearTaxAmount(_ sender: UIButton) {
-        taxAmountField.text = nil
-    }
     
     @IBAction func set15Tips(_ sender: UIButton) {
         selectedTipPerc = 0.15
