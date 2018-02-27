@@ -40,8 +40,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // add a done button to the numberpad
         keypadToolbar.items=[
-            UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: textField, action: #selector(UITextField.resignFirstResponder)),
-            UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil)
+             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
+            UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: textField, action: #selector(UITextField.resignFirstResponder))
         ]
         keypadToolbar.sizeToFit()
         // add a toolbar with a done button above the number pad
@@ -84,6 +84,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: Actions
+    
+    @IBAction func ClearAboveInputs(_ sender: Any) {
+        PreTaxAmountField.text = nil
+        taxAmountField.text = nil
+        postTaxAmount.text = "Post-Tax: "
+        tipsAmountLabel.text = "Tips: "
+        totalAmountLabel.text = "Total: "
+        updateTipsButtonState()
+        
+    }
     
     @IBAction func set15Tips(_ sender: UIButton) {
         selectedTipPerc = 0.15
