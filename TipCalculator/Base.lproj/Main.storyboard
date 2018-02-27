@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+        <array key="GeorgiaBold.ttf">
+            <string>Georgia-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-Ty-65W">
+                                <rect key="frame" x="20" y="64" width="335" height="649.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLN-bY-D1j">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="35.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
+                                        <color key="textColor" red="0.94258779287338257" green="0.43985676710888222" blue="0.079036372003398497" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZu-Az-lvd">
+                                        <rect key="frame" x="0.0" y="49.333333333333329" width="315" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre-Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tL-kA-WYB">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="tV2-DH-Edm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pre-tax amount" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="d9c-us-oGp">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="shl-zR-TDO"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISg-53-pNf">
+                                                <rect key="frame" x="240" y="0.0" width="75" height="35"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearPreTaxAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCa-6z-K9Y"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ISg-53-pNf" secondAttribute="trailing" id="klT-XE-XbL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exo-oo-Vqe">
+                                        <rect key="frame" x="0.0" y="98.333333333333343" width="315" height="35"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M74-QT-Qfp">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="a0Q-5H-N66"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tax amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nq-6T-WSc">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="N6t-D7-QHj"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-7t-GCc">
+                                                <rect key="frame" x="240" y="0.0" width="75" height="35"/>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                                <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearTaxAmount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4F7-Qr-dAc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post-Tax:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaN-UY-Okf">
+                                        <rect key="frame" x="0.0" y="147.33333333333334" width="89.333333333333329" height="24"/>
+                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vau-Ud-cy3">
+                                        <rect key="frame" x="0.0" y="185.33333333333334" width="245" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-YQ-vXj">
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
+                                                <state key="normal" title="15% Tips"/>
+                                                <connections>
+                                                    <action selector="set15Tips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUN-Yz-JEw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZh-cc-XHw">
+                                                <rect key="frame" x="91" y="0.0" width="61" height="30"/>
+                                                <state key="normal" title="18% Tips"/>
+                                                <connections>
+                                                    <action selector="set18Tips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qf-t6-Bd5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5g-5P-XrS">
+                                                <rect key="frame" x="182" y="0.0" width="63" height="30"/>
+                                                <state key="normal" title="20% Tips"/>
+                                                <connections>
+                                                    <action selector="set20Tips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHv-Ew-Esy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbs-Cr-Jwx">
+                                        <rect key="frame" x="0.0" y="229.33333333333331" width="71" height="28.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5g-wx-2dE">
+                                        <rect key="frame" x="0.0" y="272" width="75.666666666666671" height="28.666666666666686"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default photo" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-WT-WIy">
+                                        <rect key="frame" x="0.0" y="314.66666666666669" width="335" height="335.00000000000006"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="pIh-WT-WIy" secondAttribute="height" multiplier="1:1" id="3CR-2l-FBl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vLN-bY-D1j" secondAttribute="trailing" id="QvL-Sw-euL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Exo-oo-Vqe" secondAttribute="trailing" constant="20" id="RpH-0s-eOe"/>
+                                    <constraint firstAttribute="trailing" secondItem="QZu-Az-lvd" secondAttribute="trailing" constant="20" id="s0f-ln-srF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ldx-Ty-65W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8sV-Wr-kaL"/>
+                            <constraint firstItem="ldx-Ty-65W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Duq-LS-08g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ldx-Ty-65W" secondAttribute="trailing" constant="20" id="eil-ta-98T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="PreTaxAmountField" destination="d9c-us-oGp" id="SVP-h9-B3v"/>
+                        <outlet property="postTaxAmount" destination="XaN-UY-Okf" id="JFA-Bt-dvX"/>
+                        <outlet property="taxAmountField" destination="7nq-6T-WSc" id="eOV-9e-dAI"/>
+                        <outlet property="tip15Button" destination="6oy-YQ-vXj" id="Byu-yV-a3O"/>
+                        <outlet property="tip18Button" destination="pZh-cc-XHw" id="B7N-is-6qq"/>
+                        <outlet property="tip20Button" destination="i5g-5P-XrS" id="8hm-Al-kpv"/>
+                        <outlet property="tipsAmountLabel" destination="dbs-Cr-Jwx" id="tdc-W7-Yce"/>
+                        <outlet property="totalAmountLabel" destination="D5g-wx-2dE" id="g6l-lg-ClA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="35.467980295566505"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="default photo" width="471" height="470"/>
+    </resources>
+</document>
